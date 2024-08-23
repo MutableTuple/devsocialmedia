@@ -1,8 +1,13 @@
 import React from "react";
 import Follwing from "./Follwing";
 import UserPosts from "./UserPosts";
+import { getAllPosts, getAllUsers } from "../_lib/data-service";
 
-export default function UserPostsAndFollwing() {
+export default async function UserPostsAndFollwing() {
+  const posts = await getAllPosts();
+  const users = await getAllUsers();
+  console.log("POSTS BY USERS", posts);
+  console.log(" USERS", users);
   return (
     <div className="grid sm:grid-cols-8 grid-cols-1 grid-rows-2  my-4 sm:gap-8 gap-2 sm:px-0 px-4  ">
       <UserPosts />
@@ -20,6 +25,13 @@ export default function UserPostsAndFollwing() {
         followers={"1.2M"}
         caption={"Can't fix this code on my own!🤦"}
         postImage="https://www.hubspot.com/hubfs/Google%20Drive%20Integration/Untitled%20document-Aug-24-2023-08-02-14-0205-PM.jpeg"
+      />
+      <UserPosts
+        userImage={users[0].image}
+        username={users[0].name}
+        followers={"3.2B"}
+        caption={posts[0].post_text}
+        postImage={posts[0].post_image}
       />
     </div>
   );
