@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
         <div className="">
           <div className="max-w-[1140px] mx-auto ">
             <Navbar />
-
             {children}
             <MobileNavigation />
           </div>
