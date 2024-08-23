@@ -7,11 +7,9 @@ import MobileNavigation from "./_components/MobileNavigation";
 export default function Home() {
   return (
     <main className="">
-      <Navbar />
       <UserStories />
       <UserPostBox />
       <UserPostsAndFollwing />
-      <MobileNavigation />
     </main>
   );
 }

@@ -1,5 +1,7 @@
 import { Mulish, Poppins, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./_components/Navbar";
+import MobileNavigation from "./_components/MobileNavigation";
 
 const mulish = Roboto_Mono({
   subsets: ["latin"],
@@ -15,7 +17,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${mulish.className} bg-stone-100`}>
         <div className="">
-          <div className="max-w-[1140px] mx-auto ">{children}</div>
+          <div className="max-w-[1140px] mx-auto ">
+            <Navbar />
+
+            {children}
+            <MobileNavigation />
+          </div>
         </div>
       </body>
     </html>
