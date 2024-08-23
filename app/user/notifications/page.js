@@ -8,13 +8,13 @@ export default function page() {
     <div>
       <UserNotifications />
       <div className=" flex flex-col gap-4 ">
-        <h1 className="uppercase text-stone-500">Today</h1>
+        <h1 className="uppercase px-4 text-stone-500">Today</h1>
         <NotificationNotifier />
         <NotificationNotifier />
         <NotificationNotifier />
         <FollowingNotification />
         <CommentNotification />
-        <h1 className="uppercase text-stone-500">Last 7 days</h1>
+        <h1 className="uppercase px-4 text-stone-500">Last 7 days</h1>
         <NotificationNotifier />
         <NotificationNotifier />
         <NotificationNotifier />
