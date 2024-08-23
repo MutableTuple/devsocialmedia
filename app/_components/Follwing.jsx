@@ -11,6 +11,7 @@ export default async function Follwing() {
       <div className="my-2">
         {users.map((user) => (
           <PeopleYouFollowCard
+            key={user.image}
             src={user.image}
             name={user.name}
             followers={user.followers}
