@@ -7,7 +7,7 @@ export default function page() {
   return (
     <div>
       <UserNotifications />
-      <div className=" flex flex-col gap-4">
+      <div className=" flex flex-col gap-4 ">
         <h1 className="uppercase text-stone-500">Today</h1>
         <NotificationNotifier />
         <NotificationNotifier />
