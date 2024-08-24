@@ -11,9 +11,9 @@ export default function UserProfilePostCard({
   comments,
 }) {
   return (
-    <div className="border p-2 flex flex-col gap-2">
+    <div className="border p-2 flex flex-col gap-2 overflow-hidden">
       {" "}
-      <img src={src} alt="" />
+      <img src={src} alt="" className="object-cover" />
       <p className="text-xs md:text-base text-stone-600"> {caption}</p>
       <div className="flex gap-4 text-center items-center   text-xs">
         <p className="flex items-center flex-col text-green-600 ">

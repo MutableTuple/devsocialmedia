@@ -1,11 +1,12 @@
 import React from "react";
 import UserProfilePostCard from "./UserProfilePostCard";
+
 export default function UserProfilePost() {
   return (
-    <div className="p-8 ">
+    <div className="md:p-8 p-2">
       <h1 className="uppercase mb-4">Posts by Jonas</h1>
       <div
-        className="lg:columns-4 sm:columns-3 columns-2  gap-4"
+        className="lg:columns-4 sm:columns-3 columns-2 gap-4"
         style={{
           columnGap: "1rem",
         }}
@@ -45,7 +46,7 @@ export default function UserProfilePost() {
               "https://images.pexels.com/photos/544554/pexels-photo-544554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             }
           />
-        </div>{" "}
+        </div>
         <div className="mb-4">
           <UserProfilePostCard
             src={
@@ -66,14 +67,14 @@ export default function UserProfilePost() {
               "https://images.pexels.com/photos/2098427/pexels-photo-2098427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             }
           />
-        </div>{" "}
+        </div>
         <div className="mb-4">
           <UserProfilePostCard
             src={
               "https://images.pexels.com/photos/3791466/pexels-photo-3791466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             }
           />
-        </div>{" "}
+        </div>
         <div className="mb-4">
           <UserProfilePostCard
             src={
