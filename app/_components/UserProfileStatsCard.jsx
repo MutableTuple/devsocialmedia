@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 export default function UserProfileStatsCard() {
   return (
-    <div className="flex flex-col md:flex-row gap-8 bg-white p-8 justify-between items-center">
+    <div className="flex flex-col md:flex-row gap-8 bg-white p-8 justify-between items-center border-b p-8">
       <div className="flex gap-8">
         <img
           className="md:h-32 md:w-32 h-24 w-24 rounded-full outline outline-4 outline-offset-4 outline-green-300"
