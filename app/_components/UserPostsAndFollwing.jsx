@@ -40,6 +40,20 @@ export default async function UserPostsAndFollwing() {
         caption={posts[1].post_text}
         postImage={posts[1].post_image}
       />
+      <UserPosts
+        userImage={users[2].image}
+        username={users[2].name}
+        followers={"3.2B"}
+        caption={posts[2].post_text}
+        postImage={posts[2].post_image}
+      />
+      <UserPosts
+        userImage={users[2].image}
+        username={users[2].name}
+        followers={"3.3B"}
+        caption={posts[3].post_text}
+        postImage={posts[3].post_image}
+      />
     </div>
   );
 }
