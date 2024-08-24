@@ -3,6 +3,8 @@ import VariableUserImage from "./VariableUserImage";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import IconContainer from "./IconContainer";
 import { GrLike, GrDislike } from "react-icons/gr";
+import Likes from "./Likes";
+import Dislike from "./Dislike";
 export default function UserPosts({
   userImage = "https://imageio.forbes.com/specials-images/imageserve/5bb22ae84bbe6f67d2e82e05/0x0.jpg?format=jpg&crop=1012,1013,x627,y129,safe&height=416&width=416&fit=bounds",
   username = "Jeff Bezos",
@@ -33,18 +35,8 @@ export default function UserPosts({
         </div>
       </div>
       <div className="flex gap-4">
-        <div className="flex flex-col gap-2">
-          <div className="border w-10 h-10 flex items-center justify-center text-stone-700 rounded-full hover:text-green-500 hover:cursor-pointer hover:bg-green-50 duration-300 transition-all">
-            <GrLike />
-          </div>
-          <p className="text-center text-xs text-green-500">210</p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <div className="border w-10 h-10 flex items-center justify-center text-stone-700 rounded-full hover:text-red-500 hover:cursor-pointer hover:bg-red-50 duration-300 transition-all">
-            <GrDislike />
-          </div>
-          <p className="text-center text-xs text-red-500">2</p>
-        </div>
+        <Likes />
+        <Dislike />
       </div>
     </div>
   );

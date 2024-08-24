@@ -24,12 +24,12 @@ export default function UserProfileStatsCard() {
           <p>Followers</p>
         </div>
         <div className="text-center">
-          <h1 className="font-bold text-xl">2,142</h1>
-          <p>Followers</p>
+          <h1 className="font-bold text-xl">202</h1>
+          <p>Following</p>
         </div>{" "}
         <div className="text-center">
-          <h1 className="font-bold text-xl">2,142</h1>
-          <p>Followers</p>
+          <h1 className="font-bold text-xl">2</h1>
+          <p>SUBSCRIBERS</p>
         </div>
       </div>
     </div>

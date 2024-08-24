@@ -15,6 +15,7 @@ export default function UserProfilePost() {
             src={
               "https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&w=600"
             }
+            caption={"finding the bug by solvin the stupid equation 🥲🔥"}
           />
         </div>
         <div className="mb-4">
