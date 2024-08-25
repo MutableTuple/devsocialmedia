@@ -7,12 +7,8 @@ export default async function UserStories() {
   return (
     <div className="bg-white p-4 flex overflow-x-scroll gap-6 no-scrollbar">
       {users.map((user) => (
-        <Link href={`user/profile/${user.id}`}>
-          <UserStoryCircle
-            key={user.id}
-            src={user.image}
-            name={user.name.split(" ")[0]}
-          />
+        <Link key={user.id} href={`user/profile/${user.id}`}>
+          <UserStoryCircle src={user.image} name={user.name.split(" ")[0]} />
         </Link>
       ))}
     </div>
