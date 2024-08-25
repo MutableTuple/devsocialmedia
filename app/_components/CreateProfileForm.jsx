@@ -1,7 +1,5 @@
 import React from "react";
-import Button from "./Button";
 import { BsSendFill } from "react-icons/bs";
-import { MdInsertLink } from "react-icons/md";
 export default function CreateProfileForm() {
   return (
     <form className=" flex flex-col gap-4 w-72 items-center h-100 ">
