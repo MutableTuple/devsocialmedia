@@ -17,7 +17,7 @@ export default function FollowingNotification() {
             </h1>
           </div>
           <div className="flex gap-2 sm:gap-4 ">
-            <FollowActionButtons primary={false}>Discard</FollowActionButtons>{" "}
+            <FollowActionButtons primary={false}>Discard</FollowActionButtons>
             <FollowActionButtons primary={true}>
               Follow Back
             </FollowActionButtons>

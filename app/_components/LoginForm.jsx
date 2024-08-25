@@ -23,7 +23,7 @@ export default function LoginForm() {
         <BsSendFill />
       </button>
       <p>
-        don't have an account? <Link href="/">signup</Link>
+        don&apos;t have an account? <Link href="/">signup</Link>
       </p>
     </form>
   );

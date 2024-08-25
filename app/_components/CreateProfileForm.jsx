@@ -32,10 +32,12 @@ export default function CreateProfileForm() {
           className="border px-2 py-1  w-full  focus:outline-none focus:ring-1 focus:ring-green-300 "
         >
           <option value="I'm an undergrad student">
-            I'm an undergrad student
+            I&apos;m an undergrad student
           </option>
-          <option value="I'm a graduate student">I'm a graduate student</option>
-          <option value="I'm a student">I'm a student</option>
+          <option value="I'm a graduate student">
+            I&apos;m a graduate student
+          </option>
+          <option value="I'm a student">I&apos;m a student</option>
         </select>
       </div>
 
