@@ -2,7 +2,11 @@ import React from "react";
 import VariableUserImage from "./VariableUserImage";
 import { formatNumber } from "../_utils/utils";
 
-export default function PeopleYouFollowCard({ name = "user", src, followers }) {
+export default function PeopleYouFollowCard({
+  name = "user",
+  src,
+  followers = 0,
+}) {
   return (
     <div className="flex items-center gap-4 border-b py-2 hover:bg-stone-50 ">
       <VariableUserImage src={src} />

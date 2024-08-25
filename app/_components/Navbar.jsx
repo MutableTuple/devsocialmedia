@@ -3,6 +3,7 @@ import { RiNotificationBadgeLine } from "react-icons/ri";
 import { RiMailOpenLine } from "react-icons/ri";
 import IconContainer from "./IconContainer";
 import Link from "next/link";
+import UserLogged from "./UserLogged";
 export default function Navbar() {
   return (
     <div className="flex justify-between items-center bg-white py-4 px-4">
@@ -14,6 +15,7 @@ export default function Navbar() {
         </div>
       </Link>
       <div className="flex gap-2">
+        <UserLogged />
         <Link href={"/user/notifications"}>
           <IconContainer>
             <RiNotificationBadgeLine size={20} />

@@ -1,6 +1,5 @@
 import React from "react";
-
-export default function UserStoryCircle({ src, name = "user" }) {
+export default async function UserStoryCircle({ src, name = "user" }) {
   //  filter grayscale-0  contrast-200
   return (
     <div className="flex items-center flex-col gap-2 hover:cursor-pointer ">

@@ -1,6 +1,7 @@
 import React from "react";
 import PeopleYouFollowCard from "./PeopleYouFollowCard";
 import { getAllUsers } from "../_lib/data-service";
+
 export default async function Follwing() {
   const users = await getAllUsers();
   return (
@@ -14,7 +15,7 @@ export default async function Follwing() {
             key={user.image}
             src={user.image}
             name={user.name}
-            followers={user.followers}
+            followers={user.followers_count}
           />
         ))}
       </div>

@@ -4,6 +4,7 @@ import UserStories from "./_components/UserStories";
 import UserPostBox from "./_components/UserPostBox";
 import UserPostsAndFollwing from "./_components/UserPostsAndFollwing";
 import MobileNavigation from "./_components/MobileNavigation";
+import { SessionProvider } from "next-auth/react";
 export default function Home() {
   return (
     <main className="">
