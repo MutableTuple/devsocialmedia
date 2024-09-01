@@ -6,7 +6,9 @@ export async function getAllUsers() {
   return data;
 }
 export async function getAllPosts() {
-  const { data, error } = await supabase.from("Post").select("*");
+  const { data, error } = await supabase
+    .from("Post")
+    .select("* , Users(id, name, image  )");
 
   return data;
 }
@@ -43,3 +45,4 @@ export async function getUserById(id) {
     .single();
   return data;
 }
+// !create posts we need to fix

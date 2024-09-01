@@ -8,10 +8,11 @@ export default function Navbar() {
   return (
     <div className="flex justify-between items-center bg-white py-4 px-4">
       <Link href={"/"}>
-        <div>
-          <h1 className="font-black underline underline-offset-4 hover:text-green-800">
-            💻Social.Dev
+        <div className="relative border-b border-black ">
+          <h1 className="font-bold text-black">
+            Strontiu<span className="bg-black px-0.5 text-white">m</span>
           </h1>
+          <span className="absolute left-0 bottom-4 scale-110">&#8227;</span>
         </div>
       </Link>
       <div className="flex gap-2">

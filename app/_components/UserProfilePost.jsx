@@ -4,7 +4,7 @@ import UserProfilePostCard from "./UserProfilePostCard";
 export default function UserProfilePost() {
   return (
     <div className="md:p-8 p-2">
-      <h1 className="uppercase mb-4">Posts by Jonas</h1>
+      <h1 className="uppercase mb-4">Posts by Strontium</h1>
       <div
         className="lg:columns-4 sm:columns-3 columns-2 gap-4"
         style={{

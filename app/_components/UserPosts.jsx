@@ -13,7 +13,7 @@ export default function UserPosts({
   postImage = "https://images.pexels.com/photos/46164/field-of-rapeseeds-oilseed-rape-blutenmeer-yellow-46164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 }) {
   return (
-    <div className="sm:col-start-1 sm:col-end-6 bg-white p-4">
+    <div className="sm:col-start-1 sm:col-end-6 bg-white p-4 max-h-fit">
       <div className="flex w-full justify-between items-center my-2">
         <div className="flex gap-2 items-center">
           <VariableUserImage src={userImage} />
